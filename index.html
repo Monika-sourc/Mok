@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie Spirituelle - Fidelia</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333; line-height: 1.6;
+        }
+        .header {
+            background: #2c3e50; color: white; text-align: center;
+            padding: 40px 20px;
+        }
+        .header h1 { font-size: 2.5em; margin-bottom: 10px; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px; margin-top: 20px;
+        }
+        .card {
+            background: white; border-radius: 16px; overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .card img { width: 100%; height: 400px; object-fit: cover; }
+        .card-content { padding: 20px; }
+        .card h3 { color: #2c3e50; margin-bottom: 10px; font-size: 1.4em; }
+        .footer {
+            text-align: center; padding: 30px; background: #2c3e50;
+            color: white; margin-top: 40px;
+        }
+        @media (max-width: 768px) { .gallery { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Art & Spiritualité</h1>
+        <p>Une collection d'œuvres sacrées</p>
+    </div>
+    <div class="container">
+        <div class="gallery">
+            <div class="card">
+                <img src="croix.jpg" alt="Crucifix sculpté en bois dans la forêt">
+                <div class="card-content">
+                    <h3>Crucifix en Forêt</h3>
+                    <p>Sculpture en bois représentant le Christ, posée sur une souche moussue.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="krishna1.jpg" alt="Krishna et Radha en tenue turquoise et rose">
+                <div class="card-content">
+                    <h3>Krishna & Radha - Festival</h3>
+                    <p>Représentation divine de Krishna jouant de la flûte aux côtés de Radha.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="krishna2.jpg" alt="Krishna et Radha en tenue bleu et blanc">
+                <div class="card-content">
+                    <h3>Krishna & Radha - Céleste</h3>
+                    <p>Couple divin paré de bleu royal et blanc, entouré de lumières.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>© 2026 - Galerie Spirituelle | Paix et harmonie</p>
+    </div>
+</body>
+</html>
